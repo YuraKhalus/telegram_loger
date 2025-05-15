@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  telegram-tracker:
+    build: .
+    container_name: telegram-tracker
+    volumes:
+      - ./sessions:/app/sessions
+      - ./logs:/app/logs
+    tty: true
